@@ -46,6 +46,7 @@ Plug 'tpope/vim-commentary'
 Plug 'jiangmiao/auto-pairs'
 Plug 'metakirby5/codi.vim'
 Plug 'tpope/vim-surround'
+Plug 'Exafunction/codeium.vim'
 
 " Aesthetic
 Plug 'ghifarit53/tokyonight-vim'
@@ -139,7 +140,6 @@ let g:coc_global_extensions = [
             \'coc-word',
             \'coc-omni',
             \'coc-json',
-            \'coc-java',
             \'coc-eslint',
             \'coc-emmet',
             \'coc-css',
