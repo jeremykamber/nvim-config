@@ -101,7 +101,7 @@ set signcolumn=yes
 set termguicolors
 let g:tokyonight_style = 'storm' " available: night, storm
 let g:tokyonight_enable_italic = 1
-colorscheme tokyonight
+colorscheme iceberg
 syntax on
 hi NonText guifg=bg                                     " mask ~ on empty lines
 hi clear CursorLineNr                                   " use the theme color for relative number
@@ -236,12 +236,17 @@ nmap <S-Tab> :bprevious<CR>
 noremap <leader>pi :PlugInstall<CR>
 nmap s <Plug>(easymotion-s)
 nmap <leader>ff :Files <CR>
+nmap <leader>b :Buffers <CR>
 nmap <leader>/ :Rg <CR>
 let g:UltiSnipsExpandTrigger="<c-y>"
 nmap <leader>c :Codi <CR>
 nmap <leader>~ :below terminal <cr>
 imap <leader>m <ESC>
 
+" Codium mappings
+
+imap <script><silent><nowait><expr> <C-j> codeium#Accept()
+let g:codium_no_map_tab = v:true
 
   inoremap <silent><expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<cr>"
 
